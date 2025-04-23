@@ -7,7 +7,7 @@ int main () {
 	int number; //пользовательское число
 
 	printf("Введите число: ");
-	if (scanf_s("%d", &number) != 1) {
+	if (scanf("%d", &number) != 1) {
 		printf("Ошибка ввода. Введите число.\n");
 		return 1;
 	}
