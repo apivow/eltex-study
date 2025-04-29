@@ -26,7 +26,7 @@ void array_reverse() {
 
 	printf("Введите %d чисел: \n", N);
 	for (int i = 0; i < N; i++) {
-		scanf_s("%d", &array[i]);
+		scanf("%d", &array[i]);
 	}
 
 	for (int i = 0; i < N / 2; i++) {
@@ -111,7 +111,7 @@ int main() {
 		printf("4. Заполнить матрицу числами от 1 до N^2 улиткой.\n");
 		printf("5. Выход.\n");
 		printf("Выберите задание: \n");
-		scanf_s("%d", &choice);
+		scanf("%d", &choice);
 
 		switch (choice) {
 		case 1:
