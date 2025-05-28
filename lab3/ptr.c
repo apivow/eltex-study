@@ -7,7 +7,7 @@ void task1() {
 	printf("\nВведите положительное число: ");
 	if (scanf("%d", &number) != 1 || number < 0) {
 		printf("Ошибка ввода. Введите положительное число.\n");
-		return 1;
+		return;
 	}
 
 	unsigned char* ptr = (unsigned char*)&number;
@@ -21,7 +21,7 @@ void task1() {
 	printf("Введите значение третьего байта (0-255): ");
 	if (scanf("%hhu", &new_byte) != 1) {
 		printf("Ошибка ввода\n");
-		return 1;
+		return;
 	}
 
 	ptr[2] = new_byte;
