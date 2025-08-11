@@ -29,20 +29,20 @@ int main() {
             a = num();
             b = num();
             res = sub(a, b);
-            printf("\n%d + %d = %d", a, b, res);
+            printf("\n%d - %d = %d", a, b, res);
             break;
         case 3:
             a = num();
             b = num();
             res = mult(a, b);
-            printf("\n%d + %d = %d", a, b, res);
+            printf("\n%d * %d = %d", a, b, res);
             break;
         case 4:
             a = num();
             b = num();
             if (b != 0) {
                 res = div(a, b);
-                printf("\n%d + %d = %d", a, b, res);
+                printf("\n%d : %d = %d", a, b, res);
             } else {
                 printf("Ошибка. На ноль делить нельзя.\n");
                 break;
