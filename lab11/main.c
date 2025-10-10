@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include "shop.h"
+#include <locale.h>
 
 int main() {
+    setlocale(LC_ALL, "ru_RU.UTF-8");
+    
     srand((unsigned int)time(NULL));
 
     shop_init();
